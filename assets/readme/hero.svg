@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Pi CU MCP: local Windows desktop control for Pi Agent</title>
+  <desc id="desc">A Pi Agent connects over stdio to a guarded MCP server, which observes and controls a visible Windows application.</desc>
+  <rect width="1200" height="360" rx="24" fill="#0b0f12"/>
+  <path d="M48 54H1152M48 306H1152" stroke="#27333a" stroke-width="1"/>
+  <path d="M606 48V312" stroke="#27333a" stroke-width="1" stroke-dasharray="4 8"/>
+
+  <g transform="translate(64 62)">
+    <text x="0" y="0" fill="#61d8c3" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="3">LOCAL DESKTOP MCP</text>
+    <text x="0" y="70" fill="#f4f7f5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="58" font-weight="750">Pi CU MCP</text>
+    <text x="0" y="112" fill="#b7c2c5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">Give Pi Agent a guarded bridge to Windows UI.</text>
+    <text x="0" y="166" fill="#f1bd72" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18">observe  →  act once  →  verify</text>
+    <g transform="translate(0 204)">
+      <rect width="138" height="38" rx="8" fill="#132e2d" stroke="#61d8c3"/>
+      <text x="69" y="25" text-anchor="middle" fill="#bff7ec" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="16">stdio</text>
+      <rect x="154" width="178" height="38" rx="8" fill="#2c2417" stroke="#f1bd72"/>
+      <text x="243" y="25" text-anchor="middle" fill="#ffe1a8" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="16">one-use token</text>
+    </g>
+  </g>
+
+  <g transform="translate(664 60)">
+    <rect width="472" height="244" rx="16" fill="#11191e" stroke="#38505a" stroke-width="2"/>
+    <rect width="472" height="38" rx="16" fill="#18252b"/>
+    <circle cx="24" cy="19" r="5" fill="#e77868"/>
+    <circle cx="42" cy="19" r="5" fill="#f1bd72"/>
+    <circle cx="60" cy="19" r="5" fill="#61d8c3"/>
+    <text x="84" y="25" fill="#b7c2c5" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">windows-desktop</text>
+
+    <g transform="translate(30 70)">
+      <rect width="112" height="92" rx="10" fill="#132e2d" stroke="#61d8c3"/>
+      <text x="56" y="36" text-anchor="middle" fill="#bff7ec" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">Pi Agent</text>
+      <text x="56" y="63" text-anchor="middle" fill="#83b8ae" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">intent</text>
+      <path d="M122 46H166" stroke="#61d8c3" stroke-width="2"/>
+      <path d="M158 39L166 46L158 53" fill="none" stroke="#61d8c3" stroke-width="2"/>
+
+      <rect x="178" width="112" height="92" rx="10" fill="#2c2417" stroke="#f1bd72"/>
+      <text x="234" y="36" text-anchor="middle" fill="#ffe1a8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">MCP</text>
+      <text x="234" y="63" text-anchor="middle" fill="#c7a771" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">observe + act</text>
+      <path d="M300 46H344" stroke="#f1bd72" stroke-width="2"/>
+      <path d="M336 39L344 46L336 53" fill="none" stroke="#f1bd72" stroke-width="2"/>
+
+      <rect x="356" width="86" height="92" rx="10" fill="#192126" stroke="#8ea1a6"/>
+      <path d="M374 22H424V63H374Z" fill="none" stroke="#dbe5e5" stroke-width="2"/>
+      <path d="M374 34H424" stroke="#dbe5e5" stroke-width="2"/>
+      <circle cx="383" cy="28" r="2" fill="#e77868"/>
+      <circle cx="391" cy="28" r="2" fill="#f1bd72"/>
+      <text x="399" y="82" text-anchor="middle" fill="#b7c2c5" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">Windows UI</text>
+    </g>
+    <text x="30" y="204" fill="#819298" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">UI Automation  ·  screenshot  ·  SendInput  ·  foreground guard</text>
+  </g>
+</svg>

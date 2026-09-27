@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pi-cu-mcp"
+version = "0.1.0"
+description = "A local Windows computer-use MCP server for Pi Agent"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "drydraft" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Desktop Environment",
+]
+dependencies = [
+  "mcp==1.30.0",
+  "pywinauto==0.6.9",
+  "Pillow==12.3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<10"]
+
+[project.scripts]
+pi-cu-mcp = "windows_mcp.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["windows_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

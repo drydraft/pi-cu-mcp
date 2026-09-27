@@ -1,0 +1,33 @@
+{
+  "name": "pi-cu-mcp",
+  "version": "0.1.0",
+  "description": "A Pi package and local Windows computer-use MCP server for Pi Agent",
+  "keywords": [
+    "pi-package",
+    "mcp",
+    "computer-use",
+    "windows"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drydraft/pi-cu-mcp.git"
+  },
+  "homepage": "https://github.com/drydraft/pi-cu-mcp",
+  "files": [
+    "assets",
+    "skills",
+    "windows_mcp/**/*.py",
+    "tests/**/*.py",
+    "*.md",
+    "*.ps1",
+    "*.py",
+    "*.json",
+    "*.toml",
+    "requirements*.txt",
+    "LICENSE"
+  ],
+  "pi": {
+    "skills": ["./skills"]
+  }
+}

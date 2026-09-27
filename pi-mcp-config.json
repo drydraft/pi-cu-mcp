@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "windows-desktop": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\path\\to\\pi-cu-mcp\\start.ps1"
+      ],
+      "env": {
+        "WINDOWS_MCP_ALLOWED_APPS": "*"
+      },
+      "directTools": true
+    }
+  }
+}
